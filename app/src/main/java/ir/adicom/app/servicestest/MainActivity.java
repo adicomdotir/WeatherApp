@@ -3,7 +3,6 @@ package ir.adicom.app.servicestest;
 import android.annotation.TargetApi;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
@@ -56,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 url = "http://api.openweathermap.org/data/2.5/find?q="+edt.getText()+"&appid=d13615c0f9fd6171d8344ed5492a815a";
                 getInfo();
+
             }
         });
     }
@@ -116,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
         }
         ImageView img = (ImageView) findViewById(R.id.imageView);
         img.setImageBitmap(getImage(iconString));
+
     }
 
 
